@@ -8,7 +8,7 @@
 schema_version: 1
 
 # GitHub repo this game lives in, as owner/name. Blank = auto-detect from `git remote origin`.
-repo: rkibistu/godot-ai-igloo-target-test
+repo:
 
 # The Godot project directory, relative to the repo root. Use "." (or blank) if project.godot
 # is at the repo root. Auto-detected at init from where project.godot was found.
