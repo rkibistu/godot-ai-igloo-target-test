@@ -11,6 +11,7 @@ public partial class Issue5 : Node2D
     private const float AngularSpeed = 1.5f;
     private static readonly Vector2 RectangleSize = new(28, 28);
     private const double QuitAfterSeconds = 5.0;
+    private const double HueCycleSeconds = 4.0;
 
     private CirclePath _path = null!;
     private double _elapsed;
@@ -33,6 +34,7 @@ public partial class Issue5 : Node2D
 
         var position = _path.GetPosition((float)_elapsed);
         var rect = new Rect2(position - RectangleSize / 2f, RectangleSize);
-        DrawRect(rect, Colors.Red);
+        var hue = (float)(_elapsed / HueCycleSeconds % 1.0);
+        DrawRect(rect, Color.FromHsv(hue, 1f, 1f));
     }
 }
