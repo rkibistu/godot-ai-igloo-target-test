@@ -4,3 +4,6 @@
 
 # godot_ai MCP addon — provisioned by the harness at runtime, not committed.
 /addons/godot_ai/
+
+# igloo per-run logs (run.log, gate.log, proof/*.mp4) — written into the repo, not committed.
+/.igloo/runs/
