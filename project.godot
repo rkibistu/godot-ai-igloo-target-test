@@ -13,10 +13,19 @@ config_version=5
 config/name="igloo-test-proj"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+run/main_scene="res://test/scenes/issue_3.tscn"
+
+[autoload]
+
+_mcp_game_helper="*res://addons/godot_ai/runtime/game_helper.gd"
 
 [dotnet]
 
 project/assembly_name="igloo-test-proj"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_ai/plugin.cfg")
 
 [physics]
 
